@@ -12,15 +12,14 @@ String longestUniqueSubstring(String str) {
 	final String ch = str[i];
 	if (lastIndex.containsKey(ch) && lastIndex[ch]! >= start) {
 	  start = lastIndex[ch]! + 1;
-	}
-
+	  }
   // Update the last seen index of the character
 	lastIndex[ch] = i;
 	final int len = i - start + 1;
 	if (len > maxLen) {
 	  maxLen = len;
 	  maxStart = start;
-	}
+	  }
   }
 
   // Return the longest unique substring found
