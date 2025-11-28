@@ -14,10 +14,16 @@ class Password {
     if (!(_password.contains(RegExp(r'\d')))) return false;
     return true;
   }
-
+  
   // Override toString method to provide a string representation of the Password object
   @override
   String toString() {
     return 'Your Password is: $_password';
+  }
+
+  // Getter and Setter for password
+  String get password => _password;
+  set password(String newPassword) {
+    _password = newPassword;
   }
 }
