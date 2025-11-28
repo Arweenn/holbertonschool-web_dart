@@ -26,6 +26,6 @@ class User {
     if (user_password != null && user_password!.isNotEmpty) {
       isValid = Password(password: user_password!).isValid();
     }
-    return 'User(id: $id ,name: $name, age: $age, height: $height, Password: $isValid)';
+    return 'User(id : $id, name: $name, age: $age, height: $height, Password: $isValid)';
   }
 }
