@@ -5,11 +5,11 @@ class Password {
     if (!(password.length >= 8 && password.length <= 16)) return false;
     if (!(password.contains(RegExp(r'[A-Z]')))) return false;
     if (!(password.contains(RegExp(r'[a-z]')))) return false;
-    if (!(password.contains(RegExp(r'\d]')))) return false;
+    if (!(password.contains(RegExp(r'\d')))) return false;
     return true;
   }
     @override
   String toString() {
-    return 'Your password is $password';
+    return 'Your Password is: $password';
   }
 }
